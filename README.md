@@ -35,6 +35,7 @@ Model mencapai akurasi keseluruhan sebesar **99%** pada data pengujian. Berikut 
 
 ## Seberapa Pintar Model Ini? (Hasil Uji)
 Model ini sangat pintar, dengan tingkat keberhasilan mencapai **99%**. Berikut penjelasan sederhana mengenai cara membaca hasil tesnya:
+* **Accuracy (Akurasi):** Seberapa sering model menjawab dengan benar secara keseluruhan. Jika akurasinya 99%, berarti dari 100 foto, model berhasil menebak 99 foto dengan tepat.
 * **Precision (Ketepatan):** Saat model menebak "Apel ini segar", apakah tebakannya benar? Nilai tinggi berarti model jarang salah klaim (jarang menyebut buah busuk sebagai buah segar).
 * **Recall (Kejelian):** Seberapa jago model menemukan semua buah segar di tumpukan? Nilai tinggi berarti model hampir tidak pernah melewatkan buah segar yang ada.
 * **F1-Score (Nilai Gabungan):** Ini adalah skor gabungan untuk memastikan model tidak hanya teliti, tapi juga jeli dalam mengenali buah secara keseluruhan.
