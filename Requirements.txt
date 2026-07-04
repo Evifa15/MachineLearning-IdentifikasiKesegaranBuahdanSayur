@@ -1,5 +1,4 @@
 TensorFlow Version: 2.20.0
-GPU Available: []
 TensorFlow    : 2.20.0
 Pandas        : 2.2.2
 NumPy         : 2.0.2
