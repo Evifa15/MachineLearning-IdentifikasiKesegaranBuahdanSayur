@@ -1,0 +1,9 @@
+TensorFlow Version: 2.20.0
+GPU Available: []
+TensorFlow    : 2.20.0
+Pandas        : 2.2.2
+NumPy         : 2.0.2
+Matplotlib    : 3.10.0
+Seaborn       : 0.13.2
+Pillow (PIL)  : 11.3.0
+Scikit-Learn  : 1.6.1
