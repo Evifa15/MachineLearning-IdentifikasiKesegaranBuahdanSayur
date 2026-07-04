@@ -59,15 +59,15 @@ Berikut adalah penjelasan singkat mengenai isi dari repositori ini:
 
 ## Panduan untuk implementasi
 Jika tim *cloud* ingin menjalankan model ini di server, berikut adalah langkah-langkah yang perlu disiapkan:
-### 1. Persiapan Lingkungan (*Environment*)
+#### 1. Persiapan Lingkungan (*Environment*)
 * Pastikan server sudah terinstal Python versi 3.x.
 * Instal semua kebutuhan pustaka dengan menjalankan perintah: `pip install -r Requirements.txt`.
 
-### 2. Menyiapkan Model
+#### 2. Menyiapkan Model
 * Model hasil pelatihan yang sudah siap digunakan berada di dalam folder `Models/`.
 * Tim dapat memuat model tersebut ke dalam API (seperti Flask atau FastAPI) menggunakan perintah `tf.keras.models.load_model()`.
 
-### 3. Proses API (*Backend*)
+#### 3. Proses API (*Backend*)
 * Server harus menyediakan *endpoint* yang menerima foto (format *Multipart Request*).
 * Foto wajib diubah ukurannya (*resize*) menjadi 224x224 piksel agar sesuai dengan kebutuhan model.
 * Hasil prediksi dalam bentuk JSON akan dikirimkan kembali ke aplikasi *mobile*.
