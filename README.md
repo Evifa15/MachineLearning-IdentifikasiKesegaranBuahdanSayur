@@ -7,7 +7,8 @@ Model ini menggunakan pendekatan *Deep Learning* untuk membedakan kategori buah 
 | 1 | **Kelas** | 18 | *freshapples, freshbanana, freshbittergroud, freshcapsicum, freshcucumber, freshokra, freshoranges, freshpotato, freshtomato, rottenapples, rottenbanana, rottenbittergroud, rottencapsicum, rottencucumber, rottenokra, rottenoranges, rottenpotato, rottentomato.* |
 | 2 | **Gambar** | 30.357 | Total seluruh gambar yang digunakan untuk proses pelatihan dan validasi. |
 | 3 | **Komoditas** | 9 | *Apples, Banana, Bittergroud, Capsicum, Cucumber, Okra, Oranges, Potato, Tomato.* |
-
+## Dataset
+Keseluruhan dataset yang digunakan dalam pengembangan model ini bersumber dari [Kaggle: Fresh and Stale Classification](https://www.kaggle.com/datasets/swoyam2609/fresh-and-stale-classification). 
 ## 📊 Hasil & Evaluasi (Uji Kualitas)
 Kinerja sistem telah divalidasi berdasarkan standar kualitas perangkat lunak ISO 25010 dengan hasil sebagai berikut:
 
