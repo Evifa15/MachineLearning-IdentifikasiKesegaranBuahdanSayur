@@ -45,6 +45,10 @@ Model ini sangat pintar, dengan tingkat keberhasilan mencapai **99%**. Berikut p
 Gambar di bawah ini menunjukkan detail tebakan model. Warna atau angka tertinggi yang berkumpul di garis diagonal/miring menandakan bahwa tebakan model sudah sangat akurat.
 ![Gambar Confusion Matrix](confussionmatrix.png)
 
-## 📝 Dokumentasi Teknis
-Detail lebih lanjut mengenai proses *training*, pengujian, dan teknis arsitektur dapat dilihat pada file:
-* [models/model_documentation.ipynb](models/model_documentation.ipynb)
+## Struktur Folder
+Berikut adalah penjelasan singkat mengenai isi dari repositori ini:
+* **`Models/`**: Berisi file `FileModelFresee.ipynb` yang menyimpan arsitektur dan bobot model hasil pelatihan.
+* **`Notebooks/`**: Berisi file `Fresee.ipynb`, yaitu kode utama untuk proses pelatihan model (*training*).
+* **`README.md`**: Dokumentasi proyek ini.
+* **`Requirements.txt`**: Daftar pustaka (*library*) Python yang dibutuhkan untuk menjalankan program.
+* **`confussionmatrix.png`**: Visualisasi hasil pengujian untuk melihat seberapa akurat model dalam memprediksi setiap kelas buah dan sayur.
