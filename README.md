@@ -41,7 +41,7 @@ Model ini sangat pintar, dengan tingkat keberhasilan mencapai **99%**. Berikut p
 * **F1-Score (Nilai Gabungan):** Ini adalah skor gabungan untuk memastikan model tidak hanya teliti, tapi juga jeli dalam mengenali buah secara keseluruhan.
 * **Support:** Jumlah foto yang dipakai saat tes. Semakin banyak foto, semakin terpercaya hasil tesnya.
 
-##Confusion Matrix
+## Confusion Matrix
 Gambar di bawah ini menunjukkan detail tebakan model. Warna atau angka tertinggi yang berkumpul di garis diagonal/miring menandakan bahwa tebakan model sudah sangat akurat.
 ![Gambar Confusion Matrix](confussionmatrix.png)
 
