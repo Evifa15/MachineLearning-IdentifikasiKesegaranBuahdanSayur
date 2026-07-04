@@ -33,12 +33,12 @@ Model mencapai akurasi keseluruhan sebesar **99%** pada data pengujian. Berikut 
 | rottentomato | 0.99 | 0.99 | 0.99 | 155 |
 | **Accuracy** | | | **0.99** | **2099** |
 
-## Penjelasan Metrik Evaluasi
-Untuk memahami performa model pada tabel di atas, berikut adalah definisi dari metrik yang digunakan:
-*   **Precision (Ketepatan):** Mengukur seberapa banyak prediksi kelas positif yang benar-benar akurat. Jika model memprediksi "Fresh Apple", seberapa sering prediksi tersebut benar? Presisi tinggi berarti model sangat jarang memberikan hasil positif palsu (*false positive*).
-*   **Recall (Sensitivitas):** Mengukur kemampuan model untuk menemukan semua sampel positif. Jika ada 100 apel segar, seberapa banyak yang berhasil diidentifikasi dengan benar oleh model? *Recall* tinggi berarti model sangat jarang melewatkan data positif (*false negative*).
-*   **F1-Score:** Rata-rata harmonis antara *Precision* dan *Recall*. Metrik ini sangat berguna untuk melihat keseimbangan performa model, terutama jika terjadi ketimpangan jumlah data pada kelas tertentu.
-*   **Support:** Jumlah sampel data aktual untuk setiap kelas dalam set pengujian. Ini memberikan gambaran seberapa banyak data yang digunakan untuk menguji kemampuan model pada kelas tersebut.
+## Seberapa Pintar Model Ini? (Hasil Uji)
+Model ini sangat pintar, dengan tingkat keberhasilan mencapai **99%**. Berikut penjelasan sederhana mengenai cara membaca hasil tesnya:
+* **Precision (Ketepatan):** Saat model menebak "Apel ini segar", apakah tebakannya benar? Nilai tinggi berarti model jarang salah klaim (jarang menyebut buah busuk sebagai buah segar).
+* **Recall (Kejelian):** Seberapa jago model menemukan semua buah segar di tumpukan? Nilai tinggi berarti model hampir tidak pernah melewatkan buah segar yang ada.
+* **F1-Score (Nilai Gabungan):** Ini adalah skor gabungan untuk memastikan model tidak hanya teliti, tapi juga jeli dalam mengenali buah secara keseluruhan.
+* **Support:** Jumlah foto yang dipakai saat tes. Semakin banyak foto, semakin terpercaya hasil tesnya.
 
 
 
