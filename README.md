@@ -9,7 +9,7 @@ Model ini menggunakan pendekatan *Deep Learning* untuk membedakan kategori buah 
 | 3 | **Komoditas** | 9 | *Apples, Banana, Bittergroud, Capsicum, Cucumber, Okra, Oranges, Potato, Tomato.* |
 ## Dataset
 Keseluruhan dataset yang digunakan dalam pengembangan model ini bersumber dari [Kaggle: Fresh and Stale Classification](https://www.kaggle.com/datasets/swoyam2609/fresh-and-stale-classification). 
-##Hasil & Evaluasi (Uji Kualitas)
+## Hasil & Evaluasi (Uji Kualitas)
 Model mencapai akurasi keseluruhan sebesar **99%** pada data pengujian. Berikut adalah rincian metrik performa model:
 | Kelas | Precision | Recall | F1-Score | Support |
 | :--- | :---: | :---: | :---: | :---: |
