@@ -52,3 +52,22 @@ Berikut adalah penjelasan singkat mengenai isi dari repositori ini:
 * **`README.md`**: Dokumentasi proyek ini.
 * **`Requirements.txt`**: Daftar pustaka (*library*) Python yang dibutuhkan untuk menjalankan program.
 * **`confussionmatrix.png`**: Visualisasi hasil pengujian untuk melihat seberapa akurat model dalam memprediksi setiap kelas buah dan sayur.
+
+## Cara Kerjanya di Aplikasi
+1. **Di Server (Pusat Data):** Model AI "duduk" di server. Saat ada kiriman foto dari HP, server akan memproses foto tersebut dan memberikan hasil (contoh: "Jeruk - Segar").
+2. **Di Aplikasi HP:** Pengguna cukup memfoto buah, aplikasi akan mengirim foto tersebut ke server, dan hasil pengecekan akan langsung tampil di layar HP.
+
+## Panduan untuk implementasi
+Jika tim *cloud* ingin menjalankan model ini di server, berikut adalah langkah-langkah yang perlu disiapkan:
+### 1. Persiapan Lingkungan (*Environment*)
+* Pastikan server sudah terinstal Python versi 3.x.
+* Instal semua kebutuhan pustaka dengan menjalankan perintah: `pip install -r Requirements.txt`.
+
+### 2. Menyiapkan Model
+* Model hasil pelatihan yang sudah siap digunakan berada di dalam folder `Models/`.
+* Tim dapat memuat model tersebut ke dalam API (seperti Flask atau FastAPI) menggunakan perintah `tf.keras.models.load_model()`.
+
+### 3. Proses API (*Backend*)
+* Server harus menyediakan *endpoint* yang menerima foto (format *Multipart Request*).
+* Foto wajib diubah ukurannya (*resize*) menjadi 224x224 piksel agar sesuai dengan kebutuhan model.
+* Hasil prediksi dalam bentuk JSON akan dikirimkan kembali ke aplikasi *mobile*.
