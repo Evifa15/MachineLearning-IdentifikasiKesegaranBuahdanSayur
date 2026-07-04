@@ -9,31 +9,29 @@ Model ini menggunakan pendekatan *Deep Learning* untuk membedakan kategori buah 
 | 3 | **Komoditas** | 9 | *Apples, Banana, Bittergroud, Capsicum, Cucumber, Okra, Oranges, Potato, Tomato.* |
 ## Dataset
 Keseluruhan dataset yang digunakan dalam pengembangan model ini bersumber dari [Kaggle: Fresh and Stale Classification](https://www.kaggle.com/datasets/swoyam2609/fresh-and-stale-classification). 
-## 📊 Hasil & Evaluasi (Uji Kualitas)
-Kinerja sistem telah divalidasi berdasarkan standar kualitas perangkat lunak ISO 25010 dengan hasil sebagai berikut:
-
-* **Fungsionalitas:** Model berhasil mengenali 9 jenis komoditas dengan akurasi tinggi dan mampu membedakan status kesegaran secara konsisten meski terdapat variasi posisi dan sudut pengambilan foto.
-* **Keandalan:** Sistem menunjukkan stabilitas tinggi, mampu memproses gambar dengan kondisi pencahayaan atau resolusi yang kurang ideal, serta dilengkapi dengan penanganan *error* yang informatif.
-* **Kemudahan Penggunaan:** Hasil prediksi dilengkapi dengan *confidence score* yang jelas dan mudah diinterpretasikan oleh pengguna aplikasi *mobile*.
-* **Efisiensi:** Menggunakan arsitektur MobileNetV2, sistem ini sangat ringan sehingga memberikan *response time* yang sangat cepat di *cloud server*.
-* **Pemeliharaan & Portabilitas:** Struktur kode dirancang secara modular, memudahkan pengembangan fitur baru maupun integrasi ke berbagai *platform* aplikasi.
-
-## ⚙️ Panduan Implementasi (Mobile to Cloud)
-Untuk mengimplementasikan model ini ke dalam aplikasi *mobile* via *cloud server*, ikuti alur berikut:
-
-1. **Backend (Cloud Server):**
-    * Muat model menggunakan: `tf.keras.models.load_model('Fresee.h5')`.
-    * Buat API *endpoint* (misal: menggunakan Flask/FastAPI) yang menerima gambar melalui HTTP `POST` request.
-    * Pastikan gambar di-*resize* ke (224, 224) dan dinormalisasi sebelum masuk ke model.
-
-2. **Frontend (Aplikasi Mobile):**
-    * Aplikasi menangkap foto menggunakan kamera/galeri.
-    * Gambar dikirimkan ke *endpoint* server.
-    * Tampilkan label (Segar/Busuk) dan *confidence score* yang diterima dari respon server.
-
-## 📁 Struktur Repositori
-* `models/`: Berisi dokumentasi teknis dan panduan penggunaan model `.h5`.
-* `notebooks/`: Berisi file `Fresee.ipynb` (seluruh kode pengembangan sistem).
+##Hasil & Evaluasi (Uji Kualitas)
+Model mencapai akurasi keseluruhan sebesar **99%** pada data pengujian. Berikut adalah rincian metrik performa model:
+| Kelas | Precision | Recall | F1-Score | Support |
+| :--- | :---: | :---: | :---: | :---: |
+| freshapples | 0.99 | 1.00 | 0.99 | 189 |
+| freshbanana | 1.00 | 1.00 | 1.00 | 180 |
+| freshbittergroud | 1.00 | 1.00 | 1.00 | 32 |
+| freshcapsicum | 1.00 | 1.00 | 1.00 | 99 |
+| freshcucumber | 0.92 | 0.86 | 0.89 | 28 |
+| freshokra | 0.97 | 0.95 | 0.96 | 61 |
+| freshoranges | 1.00 | 1.00 | 1.00 | 170 |
+| freshpotato | 1.00 | 0.91 | 0.95 | 53 |
+| freshtomato | 0.99 | 0.99 | 0.99 | 178 |
+| rottenapples | 1.00 | 0.99 | 1.00 | 269 |
+| rottenbanana | 1.00 | 1.00 | 1.00 | 247 |
+| rottenbittergroud | 1.00 | 1.00 | 1.00 | 36 |
+| rottencapsicum | 1.00 | 1.00 | 1.00 | 90 |
+| rottencucumber | 0.82 | 0.98 | 0.89 | 41 |
+| rottenokra | 0.90 | 0.64 | 0.75 | 14 |
+| rottenoranges | 1.00 | 1.00 | 1.00 | 182 |
+| rottenpotato | 0.94 | 1.00 | 0.97 | 75 |
+| rottentomato | 0.99 | 0.99 | 0.99 | 155 |
+| **Accuracy** | | | **0.99** | **2099** |
 * `requirements.txt`: Daftar dependensi *library* Python yang diperlukan.
 
 ## 📝 Dokumentasi Teknis
