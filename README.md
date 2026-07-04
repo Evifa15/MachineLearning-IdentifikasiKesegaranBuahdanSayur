@@ -32,7 +32,16 @@ Model mencapai akurasi keseluruhan sebesar **99%** pada data pengujian. Berikut 
 | rottenpotato | 0.94 | 1.00 | 0.97 | 75 |
 | rottentomato | 0.99 | 0.99 | 0.99 | 155 |
 | **Accuracy** | | | **0.99** | **2099** |
-* `requirements.txt`: Daftar dependensi *library* Python yang diperlukan.
+
+## Penjelasan Metrik Evaluasi
+Untuk memahami performa model pada tabel di atas, berikut adalah definisi dari metrik yang digunakan:
+*   **Precision (Ketepatan):** Mengukur seberapa banyak prediksi kelas positif yang benar-benar akurat. Jika model memprediksi "Fresh Apple", seberapa sering prediksi tersebut benar? Presisi tinggi berarti model sangat jarang memberikan hasil positif palsu (*false positive*).
+*   **Recall (Sensitivitas):** Mengukur kemampuan model untuk menemukan semua sampel positif. Jika ada 100 apel segar, seberapa banyak yang berhasil diidentifikasi dengan benar oleh model? *Recall* tinggi berarti model sangat jarang melewatkan data positif (*false negative*).
+*   **F1-Score:** Rata-rata harmonis antara *Precision* dan *Recall*. Metrik ini sangat berguna untuk melihat keseimbangan performa model, terutama jika terjadi ketimpangan jumlah data pada kelas tertentu.
+*   **Support:** Jumlah sampel data aktual untuk setiap kelas dalam set pengujian. Ini memberikan gambaran seberapa banyak data yang digunakan untuk menguji kemampuan model pada kelas tersebut.
+
+
+
 
 ## 📝 Dokumentasi Teknis
 Detail lebih lanjut mengenai proses *training*, pengujian, dan teknis arsitektur dapat dilihat pada file:
