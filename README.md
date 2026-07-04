@@ -1,7 +1,7 @@
 # 🍎 Model Machine Learning: Identifikasi Kesegaran Buah dan Sayur
 Proyek ini merupakan model identifikasi kesegaran buah dan sayur yang dikembangkan menggunakan teknik *Machine Learning* dengan arsitektur **CNN MobileNetV2** melalui metode ***Transfer Learning***. Model ini dirancang untuk memproses input gambar komoditas dan memberikan klasifikasi mengenai nama komoditas serta status kesegarannya (Segar atau Tidak Segar).
 ## Deskripsi Proyek
-Sistem ini menggunakan pendekatan *Deep Learning* untuk membedakan kategori buah dan sayur. Prototipe ini telah dilatih menggunakan dataset dengan rincian sebagai berikut:
+Model ini menggunakan pendekatan *Deep Learning* untuk membedakan kategori buah dan sayur. Prototipe ini telah dilatih menggunakan dataset dengan rincian sebagai berikut:
 | No | Aspek | Total | Deskripsi |
 | :--- | :--- | :--- | :--- |
 | 1 | **Kelas** | 18 | *freshapples, freshbanana, freshbittergroud, freshcapsicum, freshcucumber, freshokra, freshoranges, freshpotato, freshtomato, rottenapples, rottenbanana, rottenbittergroud, rottencapsicum, rottencucumber, rottenokra, rottenoranges, rottenpotato, rottentomato.* |
